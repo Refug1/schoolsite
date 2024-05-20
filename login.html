@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал дистанционного обучения Россошинской СШ</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+
+    <div class="invisible_header">
+        <header>
+            <img class="logo" src="./img/logo.jpg">
+            <p>Портал дистанционного обучения Россошинской СШ<br>
+                Интересный заголовок
+            </p>
+        </header>
+    </div>
+
+    <div class="form_auth_block">
+        <div class="form_auth_block_content">
+            <form action="./index.html" class="form_auth_style" method="post">
+                <input id="login" type="text" name="auth_login" placeholder="Введите Ваш логин" required>
+                <input id="password" type="password" name="auth_password" placeholder="Введите пароль" required>
+                <button class="form_auth_button" type="submit" name="form_auth_submit" onclick="sendform()">Вход</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

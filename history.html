@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал дистанционного обучения Россошинской СШ</title>
+    <link rel="stylesheet" type="text/css" href="css/task.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <div class="top_header">
+        <header>
+            <img class="logo" src="./img/logo.jpg">
+            <p>Портал дистанционного обучения Россошинской СШ<br>
+                Интересный заголовок
+            </p>
+        </header>
+    </div>
+
+    <div class="left_header">
+        <button class="openbtn" onmouseover="openNav()" onmouseout="closeNav()">
+            <a href="./index.html"><img src="./img/home.png"></a>
+            <a href="./task.html"><img src="./img/task.png"></a>
+            <a href="./subjects.html"><img src="./img/subject.png"></a>
+            <a href="./time.html"><img src="./img/time.png"></a>
+            <a href="./performance.html"><img src="./img/performance.png"></a>
+        </button>
+
+        <div id="mySidepanel" class="sidepanel" onmouseover="openNav()" onmouseout="closeNav()">
+            <div class="element" onmouseover="openNav()">
+                <a href="./index.html">Главная</a>
+            </div>
+            <div class="element" onmouseover="openNav()">
+                <a href="./task.html">События</a>
+            </div>
+            <div class="element" onmouseover="openNav()">
+                <a href="./subjects.html">Предметы</a>
+            </div>
+            <div class="element" onmouseover="openNav()">
+                <a href="./time.html">Классные часы</a>
+            </div>
+            <div class="element" onmouseover="openNav()">
+                <a href="./performance.html">Оценки</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="info">
+        <p class="info_p">История</p>
+        <hr>
+
+
+        <div class="task">
+            <div class="task_header">
+                <img class="timer_icon" src="./img/timer.png">
+                <p class="task_p">Объявления</p>
+            </div>
+            <p class="task_text">Каникулы с 26 мая, все задания переносятся на следующий учебный год.</p>
+        </div>
+
+
+        <div class="task">
+            <div class="task_header">
+                <img class="timer_icon" src="./img/timer.png">
+                <p class="task_p">Изучить лекционный материал</p>
+            </div>
+            <p class="task_date">До: 24 мая, 15:00</p>
+            <p class="task_text">Изучите и законспектируйте лекцию</p>
+            <div class="task_end">
+                <img class="complete_icon" src="./img/complete.png">
+                <a class="answer" href="./lession1.html">Добавить ответ на задание</a>
+            </div>
+        </div>
+
+    </div>
