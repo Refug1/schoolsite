@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #FEFAE0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    display: grid;
+}
+
+/* calc([MIN]px + ([MAX] - [MIN]) * ((100vw - 500px) / (1920 - 500))); */
+.top_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    grid-area: 1 / 1;
+    height: 0px;
+    /* для работы position: sticky требуется родитель, в котором перемещается объект (объект размера 0 перемещается где угодно) */
+    width: calc(80px + (190 - 80) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.left_header {
+    position: sticky;
+    top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    grid-area: 1 / 1;
+    height: 0px;
+    /* для работы position: sticky требуется родитель, в котором перемещается объект (объект размера 0 перемещается где угодно) */
+    width: calc(80px + (190 - 80) * ((100vw - 500px) / (1920 - 500)));
+    border-top: 1px solid #000000;
+}
+
+header {
+    position: sticky;
+    height: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(500px + (1920 - 500) * ((100vw - 500px) / (1920 - 500)));
+    background-color: #E9EDC9;
+    display: flex;
+    border-bottom: 1px solid #000000;
+}
+
+header p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(50px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    font-size: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+}
+
+header .logo {
+    height: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
+    margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(110px + (220 - 110) * ((100vw - 500px) / (1920 - 500)));
+}
+
+header form {
+    margin-right: calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: auto;
+    margin-top: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+}
+
+header .loginbtn {
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: #D4A373;
+    box-shadow: 0 calc(2px + (5 - 2) * ((100vw - 500px) / (1920 - 500))) 0 #8a6a4b;
+    font-size: calc(12px + (32 - 12) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.loginbtn:hover {
+    background: #8a6a4b;
+    box-shadow: none;
+    position: relative;
+    top: calc(2px + (5 - 2) * ((100vw - 500px) / (1920 - 500)));
+}
+
+
+
+.info {
+    grid-area: 1 / 1;
+    height: calc(350px + (700 - 350) * ((100vw - 500px) / (1920 - 500)));
+    margin-top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    margin-right: calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.info_p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
+    margin-right: calc(230px + (460 - 230) * ((100vw - 500px) / (1920 - 500)));
+    font-size: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    text-align: center;
+}
+
+.excel {
+    background-color: #FFFFFF;
+    height: calc(300px + (600 - 300) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(800px + (1600 - 800) * ((100vw - 500px) / (1920 - 500)));
+    display: grid;
+    margin-top: calc(25px + (50 - 25) * ((100vw - 500px) / (1920 - 500)));
+    box-shadow: 5px 5px 5px rgb(172, 168, 168);
+}
+
+.end {
+    background-color: #E9EDC9;
+    width: calc(840px + (1680 - 840) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(50px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    margin-top: calc(70px + (140 - 70) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
+    border-radius: 0px 0px 20px 20px;
+}
+
+.end p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    font-size: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+}
+
+
+
+
+.footer {
+    background-color: #CCD5AE;
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(840px + (1680 - 840) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(85px + (170 - 85) * ((100vw - 500px) / (1920 - 500)));
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+}
+
+.footer .contacts {
+    display: flex;
+}
+
+.footer .contacts img {
+    height: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.footer p {
+    margin-left: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    font-size: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
+    line-height: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+    text-align: left;
+}
+
+
+
+
+
+
+/* Меню боковой панели */
+.sidepanel {
+    height: calc(220px + (440 - 220) * ((100vw - 500px) / (1920 - 500)));
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(70px + (140 - 70) * ((100vw - 500px) / (1920 - 500)));
+    background-color: #CCD5AE;
+    overflow-x: hidden;
+    padding-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    transition: 0.5s;
+    border-radius: 0px 0px 20px 0px;
+    border-top: 1px solid #000000;
+}
+
+.sidepanel .element {
+    display: flex;
+    height: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
+    padding: calc(5px + (10 - 5) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.sidepanel a {
+    padding-top: 8px;
+    text-decoration: none;
+    font-size: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+    color: #fffefe;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.sidepanel a:hover {
+    color: #D4A373;
+}
+
+.openbtn {
+    height: calc(240px + (480 - 240) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    cursor: pointer;
+    background-color: #CCD5AE;
+    color: white;
+    border: none;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.openbtn img {
+    height: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
+    padding: calc(5px + (10 - 5) * ((100vw - 500px) / (1920 - 500)));
+    border-radius: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
+}

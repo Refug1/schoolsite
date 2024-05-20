@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    background-color: #FEFAE0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    display: grid;
+}
+
+/* calc([MIN]px + ([MAX] - [MIN]) * ((100vw - 500px) / (1920 - 500))); */
+
+.invisible_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    grid-area: 1 / 1;
+}
+
+header {
+    height: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    background-color: #E9EDC9;
+    display: flex;
+    border-bottom: 1px solid #000000;
+}
+
+header p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(50px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    font-size: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+}
+
+header .logo {
+    height: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
+    margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(110px + (220 - 110) * ((100vw - 500px) / (1920 - 500)));
+}
+
+header form {
+    margin-right: calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: auto;
+    margin-top: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form_auth_block {
+    width: calc(300px + (600 - 300) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(250px + (600 - 300) * ((100vw - 500px) / (1920 - 500)));
+    margin: 0 auto;
+    background-size: cover;
+}
+
+.form_auth_block_content {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    padding-top: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(125px + (250 - 125) * ((100vw - 500px) / (1920 - 500)));
+    border: 1px solid rgb(0, 0, 0, 50%);
+}
+
+.form_auth_block input {
+    display: block;
+    margin: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500))) auto;
+    width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    border: 1px solid #000000;
+    outline: none;
+}
+
+input:focus {
+    color: #000000;
+    border: 1px solid #436fea;
+}
+
+.form_auth_button {
+    display: block;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background: #D4A373;
+    box-shadow: 0 calc(2px + (5 - 2) * ((100vw - 500px) / (1920 - 500))) 0 #8a6a4b;
+    font-size: calc(12px + (32 - 12) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(200px + (400 - 200) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(25px + (50 - 25) * ((100vw - 500px) / (1920 - 500)));
+}
+
+.form_auth_button:hover {
+    background: #8a6a4b;
+    box-shadow: none;
+    position: relative;
+    top: calc(2px + (5 - 2) * ((100vw - 500px) / (1920 - 500)));
+}
