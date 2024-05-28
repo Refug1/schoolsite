@@ -277,34 +277,35 @@ header .loginbtn {
 
 /* Меню боковой панели */
 .sidepanel {
-    height: calc(220px + (440 - 220) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(260px + (530 - 260) * ((100vw - 500px) / (1920 - 500)));
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
     margin-left: calc(70px + (140 - 70) * ((100vw - 500px) / (1920 - 500)));
     background-color: #CCD5AE;
     overflow-x: hidden;
-    padding-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
+    overflow-y: hidden;
     transition: 0.5s;
-    border-radius: 0px 0px 20px 0px;
+    border-radius: 0px 0px calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500))) 0px;
     border-top: 1px solid #000000;
 }
 
 .sidepanel .element {
     display: flex;
+    margin-left: calc(5px + (10 - 5) * ((100vw - 500px) / (1920 - 500)));
     height: calc(30px + (60 - 30) * ((100vw - 500px) / (1920 - 500)));
-    padding: calc(5px + (10 - 5) * ((100vw - 500px) / (1920 - 500)));
+    margin: calc(12px + (24 - 12) * ((100vw - 500px) / (1920 - 500)));
 }
 
 .sidepanel a {
-    padding-top: 8px;
     text-decoration: none;
     font-size: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
     color: #fffefe;
     display: block;
     transition: 0.3s;
     white-space: nowrap;
+    margin-top: calc(5px + (10 - 5) * ((100vw - 500px) / (1920 - 500)));
 }
 
 .sidepanel a:hover {
@@ -312,14 +313,16 @@ header .loginbtn {
 }
 
 .openbtn {
-    height: calc(240px + (480 - 240) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(260px + (531 - 260) * ((100vw - 500px) / (1920 - 500)));
     width: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
     margin-left: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
     cursor: pointer;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: #CCD5AE;
     color: white;
     border: none;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500))) calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
 }
 
 .openbtn img {

@@ -20,7 +20,7 @@
 
     <div class="form_auth_block">
         <div class="form_auth_block_content">
-            <form action="./index.html" class="form_auth_style" method="post">
+            <form onsubmit="return false;" class="form_auth_style" method="post" type="button">
                 <input id="login" type="text" name="auth_login" placeholder="Введите Ваш логин" required>
                 <input id="password" type="password" name="auth_password" placeholder="Введите пароль" required>
                 <button class="form_auth_button" type="submit" name="form_auth_submit" onclick="sendform()">Вход</button>
