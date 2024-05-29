@@ -9,19 +9,22 @@ body {
 
 /* calc([MIN]px + ([MAX] - [MIN]) * ((100vw - 500px) / (1920 - 500))); */
 
-.top_header{
+.top_header {
     position: sticky;
     top: 0;
     left: 0;
     grid-area: 1 / 1;
-    height: 0px; /* для работы position: sticky требуется родитель, в котором перемещается объект (объект размера 0 перемещается где угодно) */
+    height: 0px;
+    /* для работы position: sticky требуется родитель, в котором перемещается объект (объект размера 0 перемещается где угодно) */
     width: calc(80px + (190 - 80) * ((100vw - 500px) / (1920 - 500)));
 }
+
 .left_header {
     position: sticky;
     top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
     grid-area: 1 / 1;
-    height: 0px; /* для работы position: sticky требуется родитель, в котором перемещается объект (объект размера 0 перемещается где угодно) */
+    height: 0px;
+    /* для работы position: sticky требуется родитель, в котором перемещается объект (объект размера 0 перемещается где угодно) */
     width: calc(80px + (190 - 80) * ((100vw - 500px) / (1920 - 500)));
     border-top: 1px solid #000000;
 }
@@ -45,7 +48,7 @@ header .logo {
     height: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
     width: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
-    margin-left: calc(110px + (220 - 110) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(56px + (220 - 56) * ((100vw - 500px) / (1920 - 500)));
 }
 
 header form {
@@ -77,6 +80,7 @@ header .loginbtn {
 
 .info {
     grid-area: 1 / 1;
+    width: calc(440px + (1680 - 440) * ((100vw - 500px) / (1920 - 500)));
     height: calc(550px + (1100 - 550) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
     margin-left: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
@@ -97,7 +101,7 @@ header .loginbtn {
 .task {
     background-color: #FFFFFF;
     height: calc(240px + (480 - 240) * ((100vw - 500px) / (1920 - 500)));
-    width: calc(800px + (1600 - 800) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(400px + (1600 - 400) * ((100vw - 500px) / (1920 - 500)));
     display: grid;
     margin-top: calc(25px + (50 - 25) * ((100vw - 500px) / (1920 - 500)));
     box-shadow: 5px 5px 5px rgb(172, 168, 168);
@@ -106,13 +110,13 @@ header .loginbtn {
 .task_header {
     background-color: #E9EDC9;
     height: calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)));
-    width: calc(800px + (1600 - 800) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(400px + (1600 - 400) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
     display: grid;
     grid-template-columns: /* 3 столбца по 120 1100 200 */
-    calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)))
-    calc(550px + (1100 - 550) * ((100vw - 500px) / (1920 - 500)))
-    calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
+    calc(30px + (120 - 30) * ((100vw - 500px) / (1920 - 500)))
+    calc(250px + (1100 - 250) * ((100vw - 500px) / (1920 - 500)))
+    calc(50px + (200 - 50) * ((100vw - 500px) / (1920 - 500)));
 }
 
 .task img {
@@ -148,32 +152,33 @@ header .loginbtn {
 
 .task_date {
     margin: 0px;
-    margin-left: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(30px + (120 - 30) * ((100vw - 500px) / (1920 - 500)));
 }
 
 .task_text {
     margin: 0px;
-    margin-left: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(30px + (120 - 30) * ((100vw - 500px) / (1920 - 500)));
 }
 
 .task_end {
     background-color: #E9EDC9;
     height: calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)));
-    width: calc(800px + (1600 - 800) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(400px + (1600 - 400) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
     display: grid;
-    grid-template-columns: /* 3 столбца по 1000 80 auto */
-    calc(500px + (1000 - 500) * ((100vw - 500px) / (1920 - 500)))
-    calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)))
-    auto;
+    grid-template-columns:
+        /* 3 столбца по 1000 80 auto */
+        calc(150px + (1000 - 150) * ((100vw - 500px) / (1920 - 500))) calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500))) auto;
 }
 
-.complete_icon{
+.complete_icon {
     margin-left: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
     grid-area: 1/2;
 }
-.answer{ /* Стоит разобраться с invisible_header и кликабельностью */
+
+.answer {
+    /* Стоит разобраться с invisible_header и кликабельностью */
     font-size: calc(15px + (30 - 15) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
     white-space: nowrap;
@@ -181,7 +186,8 @@ header .loginbtn {
     color: #000000;
     text-decoration: none;
 }
-.answer:hover{
+
+.answer:hover {
     color: #3b3b3b;
 }
 
@@ -200,8 +206,7 @@ header .loginbtn {
 
 .end {
     background-color: #E9EDC9;
-    width: calc(840px + (1680 - 840) * ((100vw - 500px) / (1920 - 500)));
-    height: calc(50px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(440px + (1680 - 440) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(70px + (140 - 70) * ((100vw - 500px) / (1920 - 500)));
     margin-left: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
     border-radius: 0px 0px 20px 20px;
@@ -219,7 +224,7 @@ header .loginbtn {
 .footer {
     background-color: #CCD5AE;
     margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
-    width: calc(840px + (1680 - 840) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(440px + (1680 - 440) * ((100vw - 500px) / (1920 - 500)));
     height: calc(85px + (170 - 85) * ((100vw - 500px) / (1920 - 500)));
     border-radius: 0px 0px 20px 20px;
     display: flex;

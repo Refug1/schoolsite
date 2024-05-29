@@ -48,7 +48,7 @@ header .logo {
     height: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
     width: calc(80px + (160 - 80) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(10px + (20 - 10) * ((100vw - 500px) / (1920 - 500)));
-    margin-left: calc(110px + (220 - 110) * ((100vw - 500px) / (1920 - 500)));
+    margin-left: calc(56px + (220 - 56) * ((100vw - 500px) / (1920 - 500)));
 }
 
 header form {
@@ -80,7 +80,7 @@ header .loginbtn {
 
 .info {
     grid-area: 1 / 1;
-    height: calc(550px + (1100 - 550) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(1600px + (900 - 1600) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
     margin-left: calc(100px + (200 - 100) * ((100vw - 500px) / (1920 - 500)));
     margin-right: calc(40px + (80 - 40) * ((100vw - 500px) / (1920 - 500)));
@@ -171,8 +171,7 @@ header .loginbtn {
 
 .end {
     background-color: #E9EDC9;
-    width: calc(840px + (1680 - 840) * ((100vw - 500px) / (1920 - 500)));
-    height: calc(50px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(440px + (1680 - 440) * ((100vw - 500px) / (1920 - 500)));
     margin-top: calc(70px + (140 - 70) * ((100vw - 500px) / (1920 - 500)));
     margin-left: calc(60px + (120 - 60) * ((100vw - 500px) / (1920 - 500)));
     border-radius: 0px 0px 20px 20px;
@@ -190,7 +189,7 @@ header .loginbtn {
 .footer {
     background-color: #CCD5AE;
     margin-top: calc(20px + (40 - 20) * ((100vw - 500px) / (1920 - 500)));
-    width: calc(840px + (1680 - 840) * ((100vw - 500px) / (1920 - 500)));
+    width: calc(440px + (1680 - 440) * ((100vw - 500px) / (1920 - 500)));
     height: calc(85px + (170 - 85) * ((100vw - 500px) / (1920 - 500)));
     border-radius: 0px 0px 20px 20px;
     display: flex;
