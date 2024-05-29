@@ -5,32 +5,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Портал дистанционного обучения Россошинской СШ</title>
-        <link rel="stylesheet" type="text/css" href="css/perfomance.css">
+        <link rel="stylesheet" type="text/css" href="../css/time.css">
         <script src="js/script.js"></script>
 </head>
 
 <body>
+
         <div class="top_header">
                 <header>
-                        <img class="logo" src="./img/logo.jpg">
+                        <img class="logo" src="../img/logo.jpg">
                         <p>Портал дистанционного обучения Россошинской СШ</p>
-                        <form id="loginId" action="./index.html"><button class="loginbtn">Выйти</button></form>
                 </header>
         </div>
 
         <div class="left_header">
-                <button class="openbtn" onmouseover="openNav()" onmouseout="closeNav()"> 
-                        <a href="./main.html"><img src="./img/home.png"></a>
-                        <a href="./task.html"><img src="./img/task.png"></a>
-                        <a href="./subjects.html"><img src="./img/subject.png"></a>
-                        <a href="./time.html"><img src="./img/time.png"></a>
-                        <a href="./performance.html"><img src="./img/calendar.png"></a>
-                        <a href="./performance.html"><img src="./img/performance.png"></a>
+                <button class="openbtn" onmouseover="openNav()" onmouseout="closeNav()">
+                        <a href="./index.html"><img src="../img/home.png"></a>
+                        <a href="./task.html"><img src="../img/task.png"></a>
+                        <a href="./subjects.html"><img src="../img/subject.png"></a>
+                        <a href="./time.html"><img src="../img/time.png"></a>
+                        <a href="./calendar.html"><img src="../img/calendar.png"></a>
+                        <a href="./performance.html"><img src="../img/performance.png"></a>
                 </button>
 
                 <div id="mySidepanel" class="sidepanel" onmouseover="openNav()" onmouseout="closeNav()">
                         <div class="element" onmouseover="openNav()">
-                                <a href="./main.html">Главная</a>
+                                <a href="./index.html">Главная</a>
                         </div>
                         <div class="element" onmouseover="openNav()">
                                 <a href="./task.html">События</a>
@@ -45,20 +45,18 @@
                                 <a href="./calendar.html">Расписание</a>
                         </div>
                         <div class="element" onmouseover="openNav()">
-                            <a href="./performance.html">Оценки</a>
-                    </div>
+                                <a href="./performance.html">Оценки</a>
+                        </div>
                 </div>
 
         </div>
 
+
         <div class="info">
-                <p class="info_p">Расписание</p>
+                <p class="info_p">Темы классных часов</p>
                 <hr>
-                <iframe class="calendar" frameborder="0" scrolling="no" aria-readonly="true"
-                        src="https://onedrive.live.com/embed?resid=3C2343C7F1DF95C%21123&authkey=%21AD8cWkEXXv3_gk0&em=2&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+                <embed class="pdf" src="../excel/classhour.pdf" type="application/pdf" aria-readonly="false">
         </div>
-
-
 
         <div class="end">
                 <div class="footer">

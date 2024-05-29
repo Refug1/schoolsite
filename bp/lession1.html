@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал дистанционного обучения Россошинской СШ</title>
+    <link rel="stylesheet" type="text/css" href="../css/lession.css">
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <div class="top_header">
+        <header>
+            <img class="logo" src="../img/logo.jpg">
+            <p>Портал дистанционного обучения Россошинской СШ</p>
+        </header>
+    </div>
+
+    <div class="left_header">
+        <button class="openbtn" onmouseover="openNav()" onmouseout="closeNav()"> 
+                <a href="./index.html"><img src="../img/home.png"></a>
+                <a href="./task.html"><img src="../img/task.png"></a>
+                <a href="./subjects.html"><img src="../img/subject.png"></a>
+                <a href="./time.html"><img src="../img/time.png"></a>
+                <a href="./calendar.html"><img src="../img/calendar.png"></a>
+                <a href="./performance.html"><img src="../img/performance.png"></a>
+        </button>
+
+        <div id="mySidepanel" class="sidepanel" onmouseover="openNav()" onmouseout="closeNav()">
+                <div class="element" onmouseover="openNav()">
+                        <a href="./index.html">Главная</a>
+                </div>
+                <div class="element" onmouseover="openNav()">
+                        <a href="./task.html">События</a>
+                </div>
+                <div class="element" onmouseover="openNav()">
+                        <a href="./subjects.html">Предметы</a>
+                </div>
+                <div class="element" onmouseover="openNav()">
+                        <a href="./time.html">Классные часы</a>
+                </div>
+                <div class="element" onmouseover="openNav()">
+                        <a href="./calendar.html">Расписание</a>
+                </div>
+                <div class="element" onmouseover="openNav()">
+                    <a href="./performance.html">Оценки</a>
+            </div>
+        </div>
+
+</div>
+
+
+    <div class="info">
+        <div class="task">
+            <div class="task_header">
+                <img class="timer_icon" src="../img/timer.png">
+                <p class="task_p">Изучить лекционный материал</p>
+            </div>
+            <p class="task_date">До: 24 мая, 15:00</p>
+            <p class="task_text">Изучите и законспектируйте лекцию 8.1 (с.23-28)</p>
+
+            <div class="task_end">
+                <form id="upload_container" method="POST">
+                    <div>
+                        <input id="file_input" type="file" name="file" accept="image/*" multiple>
+                        <label for="file_input">Выберите файл</label>
+                    </div>
+                </form>
+                <form class="send_form">
+                    <input class="send_button" type="submit" value="Отправить"></p>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="end">
+        <div class="footer">
+            <div class="contacts">
+                <a href="https://vk.com/stepnoy1"><img src="../img/vk.png"></a>
+                <a href="https://t.me/stepnoy1"><img src="../img/tg.png"></a>
+                <a href="https://ok.ru/group/70000002236640"> <img src="../img/ok.png"></a>
+            </div>
+            <p>Все права защищены.<br>
+                Дата последнего изменения на сайте: 17.05.2024<br>
+                При использовании материалов сайта активная прямая ссылка на источник обязательна
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
