@@ -189,7 +189,7 @@ header .loginbtn {
 
 /* Меню боковой панели */
 .sidepanel {
-    height: calc(260px + (530 - 260) * ((100vw - 500px) / (1920 - 500)));
+    height: calc(260px + (531 - 260) * ((100vw - 500px) / (1920 - 500)));
     width: 0;
     position: fixed;
     z-index: 1;
